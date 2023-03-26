@@ -228,6 +228,11 @@
       <div class="label">&#128640; Accelerometer</div>
       <div id="accelerometer" class="doublegraph"></div>
     </div>
+    
+    <div class="double widget">
+      <div class="label">&#128642; Accelerometer</div>
+      <div id="magnetometer" class="doublegraph"></div>
+    </div>
 
     <div class="square widget">
       <div class="label">&#128171; Gyroscope</div>
@@ -334,6 +339,15 @@
       structure: ['Float32', 'Float32', 'Float32'],
       data: { 'x': [], 'y': [], 'z': [] }
     },
+    
+    magnetometer:
+    {
+      uuid: '19b10000-5002-537e-4f6c-d104768a1214',
+      properties: ['BLENotify'],
+      structure: ['Float32', 'Float32', 'Float32'],
+      data: { 'Bx': [], 'By': [], 'Bz': [] }
+    },
+    
     led: {
       uuid: '19b10000-8001-537e-4f6c-d104768a1214',
       properties: ['BLEWrite'],
@@ -757,6 +771,7 @@
 
   initGraph('gyroscope');
   initGraph('accelerometer');
+  initGraph('magnetometer');
   initGraph('temperature');
   initGraph('humidity');
   initGraph('pressure');
