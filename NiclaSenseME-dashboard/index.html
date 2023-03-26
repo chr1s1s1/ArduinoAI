@@ -230,7 +230,7 @@
     </div>
     
     <div class="double widget">
-      <div class="label">&#128642; Accelerometer</div>
+      <div class="label">&#128642; Magnetometer</div>
       <div id="magnetometer" class="doublegraph"></div>
     </div>
 
@@ -753,6 +753,7 @@
     }
     if (skip_frame == false) { // TODO update with fuction to iterate object with viz function as a property
       updateViz('accelerometer', [graph]);
+      updateViz('magnetometer', [graph]);
       updateViz('gyroscope', [graph]);
       updateViz('temperature', [digit, graph]);
       updateViz('humidity', [digit, graph]);
