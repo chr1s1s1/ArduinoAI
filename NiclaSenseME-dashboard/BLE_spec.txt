@@ -61,6 +61,17 @@ Value size: 12 bytes
 Data format: Array of 3 x 16-bit IEEE floats (little endian)
 Description: X, Y, Z acceleration values in G's
 
+
+Magnetic Field Characteristic
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+UUID:       19b10000-5002-537e-4f6c-d104768a1214
+Properties: notify
+Value size: 12 bytes
+Data format: Array of 3 x 16-bit IEEE floats (little endian)
+Description: X, Y, Z field values in T's
+
+
 Gyroscope Characteristic
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
