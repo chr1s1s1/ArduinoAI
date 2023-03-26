@@ -239,6 +239,12 @@
       <div class="label" id="gyroscope-value"></div>
       <div id="gyroscope" class="graph"></div>
     </div>
+    
+    <div class="square widget">
+      <div class="label">&#128160; MagnetHist</div>
+      <div class="label" id="gyroscope-value"></div>
+      <div id="MagnetHist" class="graph"></div>
+    </div>
 
     <div class="square widget">
       <div class="label">&#128161; RGB LED control</div>
@@ -603,7 +609,7 @@
       yaxis: { 'showticklabels': false },
       xaxis: {
         'range': [0, maxRecords],
-        'showticklabels': false,
+        'showticklabels': true,
         'autorange': false,
         'showgrid': true,
         'zeroline': true,
